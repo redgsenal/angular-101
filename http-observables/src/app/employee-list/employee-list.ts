@@ -10,9 +10,12 @@ import { EmployeeService } from '../employee-service';
 })
 export class EmployeeList {
   public employees: { id: number; name: string; age: number }[] = [];
-  constructor(private _employeeservice: EmployeeService) {}
+  constructor(private _employeeService: EmployeeService) {}
 
   ngOnInit() {
-    this.employees = this._employeeservice.getEmployees();
+    this._employeeService
+      .getEmployees()
+      .subscribe((data) => (this.employees = data));
+    console.log('data:', this.employees);
   }
 }
