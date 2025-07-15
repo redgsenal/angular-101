@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { EmployeeService } from '../employee-service';
+import { map } from 'rxjs';
 
 @Component({
   selector: 'app-employee-detail',
@@ -15,7 +16,19 @@ export class EmployeeDetail {
   ngOnInit() {
     this._employeeService
       .getEmployees()
-      .subscribe((data) => (this.employees = data));
+      .pipe(
+        map((data) => {
+          return data.sort(
+            (
+              a: { id: number; name: string; age: number },
+              b: { id: number; name: string; age: number }
+            ) => a.age - b.age
+          );
+        })
+      )
+      .subscribe((data: { id: number; name: string; age: number }[]) => {
+        this.employees = data;
+      });
     console.log('data:', this.employees);
   }
 }
