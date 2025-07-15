@@ -28,7 +28,7 @@ export class EmployeeDetail {
       )
       .subscribe((data: { id: number; name: string; age: number }[]) => {
         this.employees = data;
+        console.log('data:', this.employees);
       });
-    console.log('data:', this.employees);
   }
 }
