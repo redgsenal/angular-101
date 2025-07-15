@@ -1,8 +1,8 @@
 import { TestBed } from '@angular/core/testing';
 
-import { EmployeeService } from './employeeservice';
+import { EmployeeService } from './employee-service';
 
-describe('Employeeservice', () => {
+describe('EmployeeService', () => {
   let service: EmployeeService;
 
   beforeEach(() => {
