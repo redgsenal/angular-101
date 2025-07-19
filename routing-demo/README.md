@@ -2,6 +2,28 @@
 
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.15.
 
+Use the following: > install nvm to change to specific node and npm version > node: 18.20.0 > npm: 10.5.0 > angular/cli:
+Angular CLI: 19.2.15
+Node: 18.20.0
+Package Manager: npm 10.5.0
+OS: win32 x64
+
+        Angular: 19.2.14
+        ... common, compiler, compiler-cli, core, forms
+        ... platform-browser, platform-browser-dynamic, router
+
+        Package                         Version
+        ---------------------------------------------------------
+        @angular-devkit/architect       0.1902.15
+        @angular-devkit/build-angular   19.2.15
+        @angular-devkit/core            19.2.15
+        @angular-devkit/schematics      19.2.15
+        @angular/cli                    19.2.15
+        @schematics/angular             19.2.15
+        rxjs                            7.8.2
+        typescript                      5.7.3
+        zone.js                         0.15.1
+
 ## Development server
 
 To start a local development server, run:
