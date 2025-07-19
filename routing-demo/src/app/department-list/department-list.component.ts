@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-department-list',
-  standalone: false,
+  imports: [],
   template: `
     <p>
       department-list works!
@@ -10,6 +10,6 @@ import { Component } from '@angular/core';
   `,
   styles: ``
 })
-export class DepartmentList {
+export class DepartmentListComponent {
 
 }
