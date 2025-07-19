@@ -1,15 +1,10 @@
 import { Component } from '@angular/core';
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-department-list',
-  imports: [],
-  template: `
-    <p>
-      department-list works!
-    </p>
-  `,
-  styles: ``
+  imports: [RouterLink],
+  templateUrl: './department-list.component.html',
+  styleUrl: './department-list.component.css',
 })
-export class DepartmentListComponent {
-
-}
+export class DepartmentListComponent {}
