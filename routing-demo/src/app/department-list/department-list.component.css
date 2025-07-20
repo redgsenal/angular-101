@@ -1,3 +1,8 @@
 a.routerLink {
     padding: 10px;
 }
+
+li.navItem {
+    cursor: pointer;
+    margin: 5px 0;
+}
